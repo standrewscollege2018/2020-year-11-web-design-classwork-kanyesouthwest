@@ -2,17 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Fizzbuzz</title>
   </head>
   <body>
     <?php
-    $counter = 100;
+    $counter = 1;
+    $number_entered = $_POST['number_entered'];
     do {
-      echo "<p>$counter</p>";
-      $counter = $counter - 1;
-    } while ($counter >= 0);
-
-
+      if ($counter % 3 == 0)
+      {
+        echo "<p>fizz</p>";
+      } else {
+        echo "<p>$counter</p>";
+      }
+      $counter = $counter + 1;
+    } while ($counter <= 100);
      ?>
   </body>
 </html>
