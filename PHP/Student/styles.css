@@ -1,0 +1,21 @@
+body {
+  background-color: green;
+}
+
+.content-container {
+  margin-top 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+.student {
+  border: 1px solid rgb(204, 204, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(204, 204, 255);
+  width: 300px;
+  height: 80px;
+  text-align: center;
+}
